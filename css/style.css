@@ -1,12 +1,66 @@
 body{
     margin: 0;
 }
-
+nav{
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;
+}
+section{
+    padding: 50px;
+}
+.section-header{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px dashed black;
+    padding-bottom: 14px;
+    text-align: center;
+}
+#name-navbar{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
 #welcome-section{
+    margin: 0px;
     background-color: #191919;
-    height          : 100vh;
-
-    display         : grid;
-    justify-items   : center;
-    align-content   : end;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: end;
+}
+.tile-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+    margin-top: 30px;
+}
+.tile{
+    color: black;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.tile:hover{
+    transition: border-radius 0.5s;
+    border-radius: 20px;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    border: 3px solid black;
+}
+.tile-header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tile-desc{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
+}
+.project-image{
+    margin-top: 10px;
+    width: 100%;
 }
