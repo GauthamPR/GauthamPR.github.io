@@ -19,7 +19,7 @@ export default class Moon{
         ctx.closePath();
         
         //filling with color
-        ctx.fillStyle = "#32a852";
+        ctx.fillStyle = "#fff";
         ctx.fill();
         
     }
