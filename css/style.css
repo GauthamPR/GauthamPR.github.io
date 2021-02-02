@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+#welcome-section{
+    background-color: #191919;
+    height          : 100vh;
+
+    display         : grid;
+    justify-items   : center;
+    align-content   : end;
+}
