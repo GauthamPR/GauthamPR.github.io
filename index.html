@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <title>Portfolio</title>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <nav>
+        <div></div>
+        <ul>
+            <a href="#welcome">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About Me</li>
+            </a>
+            <a href="#projects">
+                <li>Projects</li>
+            </a>
+            <a href="#contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome">
+            <div id="welcome-container">
+                <span>I'm Gautham </span>
+                <span>And I want to apply what I learned so far.</span>
+            </div>
+        </section>
+        <section id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div id="about-desc">
+                <div id="word-cloud"></div>
+                <span>
+                    <div>
+                        <p>
+                            An aspiring software developer and <b>B.Tech Computer Science Student</b> at KTU currently
+                            <b>specializing</b> in <b>Web App Development.</b> I am also exploring other realms of the
+                            vast programming world to expand my skillset and knowledge.
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="q-and-a">
+                        <h2>Why software development?</h2>
+                        <p>I believe softwares can solve a lot of real-world problems and provide a better quality of
+                            life. As someone who <b>loves problem-solving</b> coding became a <b>passion</b> for me.</p>
+                    </div>
+                    <div class="q-and-a">
+                        <h2>Why hire me?</h2>
+                        <p>Because I'm Batman.</p>
+                    </div>
+                </span>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="section-header">
+                <h2 class="section-header">Projects</h2>
+            </div>
+            <div class="tile-holder">
+                <div class="tile">
+                    <h2 class="tile-header">Remote File Explorer</h2>
+                    <span class="tile-desc">A remote file explorer system</span>
+                    <div class="tile-button-holder">
+                        <a class="tile-button" href="https://github.com/GauthamPR/remote-file-explorer"
+                            target="_blank">View Source</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <h2 class="tile-header">Event Permission and Hall Reservation System</h2>
+                    <div></div>
+                    <span class="tile-desc">A website which college Students can use to get event permission and reserve
+                        halls</span>
+                    <div class="tile-button-holder">
+                        <a class="tile-button" href="https://github.com/GauthamPR/illuminati" target="_blank">View
+                            Source</a>
+                        <a class="tile-button" href="https://illuminati.gauthamp.repl.co" target="_blank">Visit Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div id="contact-holder">
+                    <a class="tile-button" target="_blank">LinkedIn</a>
+                    <a class="tile-button" target="_blank">Github</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+<footer>
+    <div>
+        Footer Content
+    </div>
+</footer>
+<script src="js/index.js"></script>
+
 </html>
