@@ -1,10 +1,23 @@
 // List of words
-var myWords = [{ word: "React", size: "30" }, { word: "NodeJS", size: "40" }, { word: "d3", size: "15" }, { word: "CSS", size: "20" }, { word: "HTML", size: "30" }, { word: "Bootstrap", size: "20" }, { word: "jQuery", size: "20" }]
+var myWords = [
+  { word: "React", size: "30" },
+  { word: "NodeJS", size: "35" },
+  { word: "d3", size: "15" },
+  { word: "CSS", size: "35" }, 
+  { word: "HTML", size: "35" },
+  { word: "Bootstrap", size: "20" },
+  { word: "jQuery", size: "20" },
+  { word: "JavaScript", size: "40" },
+  { word: "Python", size: "20" },
+  { word: "Java", size: "15" },
+  { word: "C", size: "35"},
+  { word: "SQL", size: "25"}
+];
 
 // set the dimensions and margins of the graph
-var margin = { top: 10, right: 10, bottom: 10, left: 10 },
-  width = 250 - margin.left - margin.right,
-  height = 200 - margin.top - margin.bottom;
+var margin = { top: 0, right: 0, bottom: 0, left: 0 },
+  width = 300 - margin.left - margin.right,
+  height = 250 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#word-cloud").append("svg")
@@ -38,6 +51,7 @@ function draw(words) {
     .style("fill", "black")
     .attr("text-anchor", "middle")
     .style("font-family", "")
+    .style("opacity", d=>d.size/40)
     .attr("transform", function (d) {
       return "translate(" + [d.x, d.y] + ")";
     })
