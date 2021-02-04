@@ -156,7 +156,7 @@ footer{
     }
     section{
         margin: 40px 10px;
-        padding: 15px 5px;
+        padding: 40gpx 5px;
     }
     #about-desc{
         grid-template-columns: 1fr;
