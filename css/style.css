@@ -63,7 +63,7 @@ section{
 #welcome-container{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin-left: 12 vw;
+    margin-left: 12vw;
     font-size: 30px;
 }
 #about{
@@ -88,19 +88,22 @@ section{
 }
 .tile{
     border: 3px solid black;
-    padding: 10px 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 .tile-header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 30px;
 }
 .tile-desc{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
+    margin: 0px 30px;
 }
 .tile-button-holder{
+    margin: 0px 30px;
     display: flex;
     column-gap: 20px;
     justify-content: end;
@@ -119,13 +122,9 @@ section{
     border-radius: 0px;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-.project-image{
-    padding: 5px;
-    border: 1px solid grey;
-}
 .project-image img{
     width: 100%;
-    aspect-ratio: 16:9;
+    height: 100%;
 }
 #contact-holder{
     height: 30vh;
