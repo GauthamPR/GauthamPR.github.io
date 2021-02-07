@@ -66,9 +66,13 @@ section{
     letter-spacing: 0.04em;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin-left: 12px;
     font-size: 30px;
     color: white;
+    justify-content: center;
+    text-align: center;
+}
+#name{
+    font-size: 50px;
 }
 #about{
     display: grid;
@@ -105,6 +109,9 @@ section{
 .tile-desc{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
     margin: 0px 30px;
+}
+.field-name{
+    color: green;
 }
 .tile-button-holder{
     margin: 0px 30px;
