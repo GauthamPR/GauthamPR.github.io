@@ -97,10 +97,14 @@ section{
 .tile{
     border: 3px solid black;
     padding-bottom: 20px;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: space-between;
+    */
     row-gap: 30px;
+
+    display: grid;
+    grid-template-rows: 1fr auto auto 0.7fr auto;
 }
 .tile-header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,9 +115,14 @@ section{
     margin: 0px 30px;
 }
 .tile-table{
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-direction: column;
     row-gap: 20px;
+    justify-content: space-between;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
     column-gap: 10px;
 }
 .field-name{
@@ -123,7 +132,7 @@ section{
 .field-values{
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    text-align: end;
 }
 .tile-button-holder{
     margin: 0px 30px;
