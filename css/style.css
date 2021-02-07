@@ -110,8 +110,20 @@ section{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
     margin: 0px 30px;
 }
+.tile-table{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
 .field-name{
+    font-weight: bold;
     color: green;
+}
+.field-values{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 .tile-button-holder{
     margin: 0px 30px;
