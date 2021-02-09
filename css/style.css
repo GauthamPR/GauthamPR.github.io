@@ -30,14 +30,18 @@ nav ul a{
     font-family: 'Courier New', Courier, monospace;
     padding: 0px 10px;
     background-color: whitesmoke;
+    border: 1px solid transparent;
 }
 nav ul a:hover{
     background-color: #F5BA42;
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
+nav ul a:first-child:hover{
+    border-left: 1px solid transparent;
+}
 section{
-    margin: 70px 0px;
+    margin-top: 45px;
     padding: 40px 50px;
     box-sizing: border-box;
     min-height: 50vh;
@@ -90,40 +94,75 @@ section{
 }
 .tile-holder{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
     margin-top: 30px;
 }
 .tile{
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
+    border: 3px solid black;
+    transition: box-shadow 0.2s;
+}
+.tile:hover{
+    box-shadow: 0 3px 6px #575656;
 }
 .tile img{
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 .tile-text{
+    margin-right: 20px;
+    margin-left: 20px;
     height: 100%;
+    display: grid;
+    grid-template-rows: 100px 0.6fr 2.1fr;
+    padding-bottom: 20px;
+    row-gap: 20px;
+}
+.tile-text .header{
+    display: flex;
+    align-items: end;
+    border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tile-text .header h2{
+    margin-bottom: 10px;
+}
+.tile-foot{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
-    margin: 30px;
-    margin-bottom: 10px;
-    gap: 10px;
-}
-.tile-text h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: stretch;
+    gap: 20px;
 }
 .jail{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    flex-grow: 1;
+    gap: 10px;
+    row-gap: 20px;
+}
+.cell span{
+    display: block;
+}
+.field-name{
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.field-values{
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+.context{
+    opacity: 0.7
 }
 .tile-button-holder{
-    text-align: end;
-    margin: 20px 0px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
 }
 .tile-button{
     background-color: #316ab4;
@@ -167,10 +206,10 @@ footer{
         margin: 40px 10px;
         padding: 40px 5px;
     }
-    #about-desc{
-        grid-template-columns: 1fr;
+    .field-values{
+        margin:0;
     }
-    .tile-holder{
+    #about-desc{
         grid-template-columns: 1fr;
     }
 }
