@@ -156,6 +156,12 @@ section{
     font-size: 14px;
     letter-spacing: 0.05em;
 }
+ul.field-values{
+    padding-left: 15px;
+}
+ul.field-values li{
+    margin-top: 5px;
+}
 .context{
     opacity: 0.7
 }
