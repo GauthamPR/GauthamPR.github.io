@@ -130,6 +130,9 @@ section{
 .tile-text .header h2{
     margin-bottom: 10px;
 }
+.tile-desc{
+    font-size: 18px;
+}
 .tile-foot{
     display: flex;
     flex-direction: column;
