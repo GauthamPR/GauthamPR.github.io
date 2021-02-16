@@ -4,44 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <title>Portfolio</title>
 </head>
-
 <body>
     <nav>
         <div></div>
         <ul>
-            <a href="#welcome">
-                <li>Home</li>
-            </a>
-            <a href="#about">
-                <li>About Me</li>
-            </a>
-            <a href="#projects">
-                <li>Projects</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
+            <li>
+                <a href="#welcome">Home</a>
+            </li>            
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>            
         </ul>
     </nav>
     <main>
         <section id="welcome">
             <div id="welcome-container">
-                <span id="name">I'm Gautham </span>
-                <span>And I love finding software solutions.</span>
+                <span id="name" data-aos="fade-in" data-aos-delay="200">I'm Gautham </span>
+                <span data-aos="fade-in" data-aos-delay="800">And I love finding software solutions.</span>
             </div>
         </section>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <div class="section-header">
                 <h2>About Me</h2>
             </div>
             <div id="about-desc">
-                <div id="word-cloud"></div>
-                <span>
+                <div id="word-cloud" data-aos="fade-right" data-aos-delay="100"></div>
+                <span data-aos="fade-in" data-aos-delay="500">
                     <div>
                         <p>
                             An aspiring software developer and <b>B.Tech Computer Science Student</b> at KTU
@@ -64,12 +62,12 @@
                 </span>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" data-aos="fade-up">
             <div class="section-header">
                 <h2 class="section-header">Projects</h2>
             </div>
             <div class="tile-holder">
-                <div class="tile">
+                <div class="tile" data-aos="fade-left">
                     <div>
                         <img src="assets/remote_file_explorer.jpg" style="height: 250px;" alt="Screenshot of Remote File Explorer Page">
                     </div>
@@ -103,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tile">
+                <div class="tile" data-aos="fade-left" data-aos-delay="250">
                     <div>
                         <img src="assets/hall_reservation.jpg" style="height: 250px;" alt="Screenshot Of Hall Reservation Page"></img>
                     </div>
@@ -147,11 +145,11 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <div class="section-header">
                 <h2>Contact</h2>
             </div>
-            <div id="contact-holder">
+            <div id="contact-holder" data-aos="fade-in" data-aos-delay="500">
                 <a class="tile-button" href="https://www.linkedin.com/in/gautham-p-r-2a6039206/"
                     target="_blank">LinkedIn</a>
                 <a class="tile-button" href="https://github.com/GauthamPR" target="_blank">Github</a>
@@ -159,12 +157,17 @@
             </div>
         </section>
     </main>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({once: true, duration: 800, anchorPlacement: 'top-bottom'});
+    </script>
 </body>
 <footer>
     <div>
         Footer Content
     </div>
 </footer>
-<script src="js/index.js"></script>
-
 </html>

@@ -21,23 +21,29 @@ nav ul{
     border-bottom: 1px solid black;
     border-left: 1px solid black;
 }
-nav ul a{
+nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
     padding: 0px 10px;
     background-color: whitesmoke;
     border: 1px solid transparent;
 }
-nav ul a:hover{
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+nav ul li:hover{
     background-color: #F5BA42;
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
-nav ul a:first-child:hover{
+nav ul li:first-child:hover{
     border-left: 1px solid transparent;
 }
 section{
