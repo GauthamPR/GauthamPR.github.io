@@ -109,10 +109,10 @@ section{
     flex-direction: column;
     justify-content: stretch;
     border: 3px solid black;
-    transition: box-shadow 0.2s;
+    box-shadow: 3px 3px 5px rgb(168, 167, 167);
 }
 .tile:hover{
-    box-shadow: 0 3px 6px #575656;
+    box-shadow: none;
 }
 .tile img{
     width: 100%;
