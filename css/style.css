@@ -74,6 +74,10 @@ section{
     display: grid;
     align-items: center;
 }
+#welcome>h1{
+    margin: 0px;
+    font-weight: normal;
+}
 #welcome-container{
     letter-spacing: 0.04em;
     display: grid;
