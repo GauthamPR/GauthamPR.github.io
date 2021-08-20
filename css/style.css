@@ -89,6 +89,8 @@ section{
 }
 #name{
     font-size: 50px;
+    margin: 0px;
+    font-weight: normal;
 }
 #about{
     display: grid;
