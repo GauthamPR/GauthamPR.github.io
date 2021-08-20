@@ -4,7 +4,7 @@ body{
 }
 nav{
     background-color: transparent;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     position: fixed;
     height: 40px;
