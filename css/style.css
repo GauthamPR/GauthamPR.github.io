@@ -3,6 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 body{
+    overflow: hidden;
     margin: 0;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif, Times, serif;
 }
