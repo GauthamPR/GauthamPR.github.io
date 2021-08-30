@@ -8,7 +8,7 @@ body{
 }
 nav{
     background-color: transparent;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
     box-sizing: border-box;
     position: fixed;
@@ -224,6 +224,9 @@ footer{
 }
 
 @media(max-width: 600px){
+    nav{
+        width: 100vw;
+    }
     nav ul{
         width: 100%;
     }
